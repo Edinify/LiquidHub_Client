@@ -1,4 +1,4 @@
-import React,{use} from 'react'
+import React from 'react'
 
 const MintManage = ({currentObj,setOpenPosition,openPosition}) => {
     console.log(currentObj,"selected")
