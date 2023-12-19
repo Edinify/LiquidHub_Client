@@ -1,0 +1,358 @@
+.mint-manage {
+  width: 80%;
+}
+
+.mint-manage .mint-content .mint-header h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+.mint-manage .mint-content .mint-header span {
+  font-weight: 600;
+  font-weight: 12px;
+  transition: 0.5s;
+}
+
+.mint-manage .mint-content .mint-header .back-position {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #607d8b;
+}
+
+.mint-manage .mint-content .mint-header .back-position:hover {
+  color: #60fbd0;
+}
+
+.mint-card.manage {
+  display: flex;
+  padding: 12px;
+}
+
+.mint-manage-left {
+  width: 50%;
+}
+.mint-manage-left .manage-left-t h3 {
+  color: #607d8b;
+  font-size: 12px;
+}
+
+.mint-manage-left .manage-left-t .deposit-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0;
+}
+.mint-manage-left .manage-left-t .deposit-input button {
+  padding: 4px;
+  border-radius: 16px;
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(45deg, #607d8b, #607d8b 75%, #22242f 150%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deposit-input .deposit-value {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  padding: 0.5625rem;
+  box-shadow: 0 0 0 1px #607d8b1a;
+  transition: all 0.2s;
+  background-color: #161721;
+  width: 90%;
+}
+.deposit-input .deposit-value input {
+  background: none;
+  border: none;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.deposit-input .deposit-value:focus {
+  box-shadow: 0 0 0 1px #60fbd0;
+  border: 1px solid red;
+}
+.deposit-input .deposit-value input:focus {
+  /* border: ; */
+  outline: none;
+}
+
+.mint-manage-left .add-arb {
+  text-align: center;
+}
+
+.mint-manage-left .manage-left-t .add-arb .arb-btns {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.mint-manage-left .manage-left-t .add-arb .arb-btns button {
+  width: 22%;
+  color: white;
+  transition: all 0.25s;
+  border-radius: 4px;
+  background-color: #60fbd01a;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px 0 0;
+  padding: 0.35rem 0.25rem;
+}
+.mint-manage-left .manage-left-t .add-arb .arb-btns button:nth-child(4) {
+  background-color: #60fbd066;
+}
+
+.mint-manage-left .manage-left-t .add-arb .arb-btns button:nth-child(4):hover {
+  background-color: #60fbd080;
+}
+
+.mint-manage-left .manage-left-t .add-arb .arb-btns button:nth-child(3) {
+  background-color: #60fbd04d;
+}
+
+.mint-manage-left .manage-left-t .add-arb .arb-btns button:nth-child(3):hover {
+  background-color: #60fbd066;
+}
+
+.mint-manage-left .manage-left-t .add-arb .arb-btns button:nth-child(2) {
+  background-color: #60fbd033;
+}
+
+.mint-manage-left .manage-left-t .add-arb .arb-btns button:nth-child(2):hover {
+  background-color: #60fbd04d;
+}
+
+.mint-manage-left .manage-left-t .add-arb .arb-btns button:nth-child(1):hover {
+  background-color: #60fbd033;
+}
+
+/* manage-left -top finished */
+
+/* manage-left -bottom -start */
+
+.mint-manage-left .manage-left-b h3 {
+  color: #607d8b;
+  font-size: 12px;
+}
+
+.mint-manage-left .manage-left-b .deposit-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0;
+}
+.mint-manage-left .manage-left-b .deposit-input button {
+  padding: 4px;
+  border-radius: 16px;
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(45deg, #607d8b, #607d8b 75%, #22242f 150%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mint-manage-left .manage-left-b .add-arb .arb-btns button {
+  width: 22%;
+  color: white;
+  transition: all 0.25s;
+  border-radius: 4px;
+  background-color: #e539351a;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px 0 0;
+  padding: 0.35rem 0.25rem;
+}
+.mint-manage-left .manage-left-b .add-arb .arb-btns button:nth-child(4) {
+  background-color: #e5393566;
+}
+
+.mint-manage-left .manage-left-b .add-arb .arb-btns button:nth-child(4):hover {
+  background-color: #e5393580;
+}
+
+.mint-manage-left .manage-left-b .add-arb .arb-btns button:nth-child(3) {
+  background-color: #e539354d;
+}
+
+.mint-manage-left .manage-left-b .add-arb .arb-btns button:nth-child(3):hover {
+  background-color: #e5393566;
+}
+
+.mint-manage-left .manage-left-b .add-arb .arb-btns button:nth-child(2) {
+  background-color: #e5393533;
+}
+
+.mint-manage-left .manage-left-b .add-arb .arb-btns button:nth-child(2):hover {
+  background-color: #e539354d;
+}
+
+.mint-manage-left .manage-left-b .add-arb .arb-btns button:nth-child(1):hover {
+  background-color: #e5393533;
+}
+
+/* manage-left-bottom -finsihed */
+
+/* manage -right -start */
+
+.mint-manage-right {
+  width: 50%;
+}
+
+/* manage- right -top-start */
+
+
+.mint-manage-right .mint-right-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mint-manage-right .mint-right-top .box-data {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mint-manage-right .mint-right-top .box-data h3 {
+  font-size: 12px;
+  color: #607d8b;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.mint-manage-right .mint-right-top .box-data span {
+  font-size: 20px;
+}
+
+.mint-manage-right .mint-right-top .box-data small {
+  color: #607d8b;
+  font-size: 12px;
+}
+.mint-manage-right .mint-right-top .box-data.box-1 {
+  border-right: 1px solid rgba(96, 125, 139, 0.25);
+  border-bottom: 1px solid rgba(96, 125, 139, 0.25);
+}
+.mint-manage-right .mint-right-top .box-data.box-2 {
+  border-bottom: 1px solid rgba(96, 125, 139, 0.25);
+}
+.mint-manage-right .mint-right-top .box-data.box-3 {
+  border-right: 1px solid rgba(96, 125, 139, 0.25);
+}
+
+.mint-manage-right .mint-right-top .box-data.box-4 .box-currency {
+  display: flex;
+  flex-direction: column;
+}
+.mint-manage-right .mint-right-top.block .box-data.box-4 .box-currency {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* manage- right -top-finished */
+
+
+/* /* manage- right -bottom-start */
+
+
+.mint-manage-right  .mint-right-b .mint-fee-container .mint-fee {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.mint-manage-right  .mint-right-b .mint-fee-container .mint-fee  span {
+  color: #607d8b;
+ 
+}
+
+
+.mint-manage-right  .mint-right-b .open-pos {
+  /* width: 100%; */
+  margin: 10px 0;
+}
+
+.mint-manage-right  .mint-right-b .open-pos button {
+  width: 100%;
+  color: #161721;
+  background-color: #235C83;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+
+}
+
+/* manage- right -bottom-finished */
+
+
+
+/* danger-zone start */
+
+.danger-zone{
+  border: 1px solid rgba(229,57,53,.5);
+  background-color: rgba(45,6,6,.75);
+  margin-top: 20px;
+  width: 70%;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 20px 0;
+}
+.danger-zone .danger-container{
+  color: #e53935;
+  font-size: 12px;
+  font-weight: 600;
+}
+/* .danger-zone .danger-container h3{
+  margin-bottom: 8px;
+} */
+.danger-zone .danger-container p{
+  margin: 10px 0;
+}
+
+.danger-zone button{
+  background-color: #ba000d;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+
+/* danger-zone finshed */
+
+
+
+@media screen and (max-width:1100px) {
+  .danger-zone{
+    width: 100%;
+  }
+
+  .mint-content .mint-cards .mint-content-container .mint-card.manage{
+    border: 1px solid red;
+    flex-direction: column;
+  }
+
+  .mint-content .mint-cards .mint-content-container .mint-card.manage .mint-manage-left{
+    width: 100%;
+  }
+  .mint-content .mint-cards .mint-content-container .mint-card.manage .mint-manage-right{
+    width: 100%;
+    margin: 20px 0;
+  }
+}

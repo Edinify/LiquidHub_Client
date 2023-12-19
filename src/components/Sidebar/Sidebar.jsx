@@ -4,10 +4,30 @@ import { ReactComponent as DashboardLogo } from "../../assets/sidebar/dashboard-
 import { ReactComponent as WalletLogo } from "../../assets/sidebar/wallet-alt-svgrepo-com.svg";
 import { ReactComponent as SwapLogo } from "../../assets/sidebar/swap-horizontal-solid-svgrepo-com.svg";
 import { ReactComponent as MintLogo } from "../../assets/sidebar/coin-svgrepo-com.svg";
+import { useEffect, useRef, useState } from "react";
 
 const Sidebar = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
   // const [selectedManage, setSelectedManage] = useState(null);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
 
   return (
     <>
@@ -37,12 +57,36 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="/bridge"
-            className={location.pathname === "/bridge" ? "active" : ""}
-          >
-            IBC/Bridge
-          </Link>
+          <div className="dropdown" ref={dropdownRef}>
+            <Link
+              onClick={handleClick}
+              to="/bridge"
+              className={location.pathname === "/bridge" ? "active" : ""}
+            >
+              IBC/Bridge
+            </Link>
+            {isOpen && (
+              <ul>
+                <li>
+                  <Link
+                    className={location.pathname === "/bridge" ? "active" : ""}
+                    to="/bridge"
+                  >
+                    Cosmos IBC Transfer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/axel">Axelar Bridge</Link>
+                </li>
+                <li>
+                  <Link to="/gavity">Gravity Bridge</Link>
+                </li>
+                <li>
+                  <Link to="/nomic">Nomic BTC</Link>
+                </li>
+              </ul>
+            )}
+          </div>
         </li>
         <li>
           <Link

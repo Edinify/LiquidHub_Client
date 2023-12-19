@@ -55,6 +55,14 @@
   margin-left: 10px;
 }
 
+.dropdown ul{
+  margin-left: 20px;
+}
+.dropdown ul li a {
+  font-size: 13px;
+  padding: 4px;
+}
+
 @media screen and (max-width: 780px) {
   .sidebar {
     display: none;
