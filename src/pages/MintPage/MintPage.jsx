@@ -16,7 +16,7 @@ const MintPage = ({setCurrentObj}) => {
 // 
   const series = [100];
   const [openPosition, setOpenPosition] = useState(false);
-  const [selectedManage, setSelectedManage] = useState(0);
+  const [selectedManage, setSelectedManage] = useState(null);
   const navigate = useNavigate()
 
   const mintData = [
@@ -72,7 +72,7 @@ const MintPage = ({setCurrentObj}) => {
     },
   ];
 
-  console.log(selectedManage,"select")
+  console.log(setSelectedManage,"select")
 
   return (
     <>
