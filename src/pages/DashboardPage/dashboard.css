@@ -1,0 +1,252 @@
+.dashboard-page {
+  width: 80%;
+}
+.dashboard-page .dashboard-content .dashboard-header h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  /* margin-left: 20px; */
+}
+.dashboard-page .dashboard-content .dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.dashboard-page .dashboard-content .dashboard-cards .dashboard-box {
+  margin: 10px 10px 10px 0;
+  background: rgba(22, 23, 33, 0.75);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  color: white;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .box-data {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .box-data
+  h3 {
+  font-size: 12px;
+  color: #607d8b;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .box-data
+  span {
+  font-size: 20px;
+
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .box-data
+  small {
+  color: #607d8b;
+  font-size: 12px;
+}
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .box-data.box-1{
+    border-right: 1px solid rgba(96,125,139,.25);
+    border-bottom: 1px solid rgba(96,125,139,.25);
+  }
+  .dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .box-data.box-2{
+    border-bottom: 1px solid rgba(96,125,139,.25);
+  }
+  .dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .box-data.box-3{
+
+    border-right: 1px solid rgba(96,125,139,.25);
+  }
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .box-data.box-4
+  .box-currency {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content.block
+  .box-data.box-4
+  .box-currency {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container.stake
+  .box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .staked-balance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .staked-balance
+  h3 {
+  font-size: 16px;
+  color: #607d8b !important;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .staked-balance
+  .b {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(96, 251, 208);
+  margin: 0 10px 0 20px;
+}
+
+.dashboard-page
+  .dashboard-content
+  .dashboard-cards
+  .dashboard-box
+  .box-container
+  .box-content
+  .stake-btn {
+  background: linear-gradient(45deg, #1e92e6, #60fbd0 75%, #1c6599 150%);
+  color: #161721;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.fund-btn {
+  color: #46d0d9;
+  background: transparent;
+  border: 1px solid #60fbd0;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.apexcharts-legend.apx-legend-position-right {
+  display: none;
+}
+
+
+
+@media screen and (max-width:980px) {
+  .dashboard-page .dashboard-content .dashboard-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width:700px) {
+  .dashboard-page{
+    width: 100%;
+  }
+}

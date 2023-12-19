@@ -1,0 +1,37 @@
+.header {
+  padding: 20px 0;
+}
+
+.header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-content .logo img {
+  height: 40px;
+}
+
+.header .header-content .mobile-logo img {
+  display: none;
+  height: 40px;
+}
+
+.header .header-content .header-buttons button {
+  background: linear-gradient(45deg, #607d8b, #607d8b 75%, #22242f 150%);
+  background-size: 300% 100%;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 140px;
+}
+
+@media screen and (max-width: 600px) {
+  .header .header-content .logo {
+    display: none;
+  }
+  .header .header-content .mobile-logo img {
+    display: block;
+  }
+}
