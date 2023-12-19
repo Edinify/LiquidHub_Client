@@ -13,10 +13,10 @@ const MintPage = ({setCurrentObj}) => {
     colors: ["#AA55E6"],
     labels: ["Label 1"],
   };
-
+// 
   const series = [100];
   const [openPosition, setOpenPosition] = useState(false);
-  const [selectedManage, setSelectedManage] = useState(null);
+  const [selectedManage, setSelectedManage] = useState(0);
   const navigate = useNavigate()
 
   const mintData = [
