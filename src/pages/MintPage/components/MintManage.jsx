@@ -34,7 +34,7 @@ const mintFee = [
   { id: 2, name: "Interest", value: "1.0% APR" },
 ];
 
-const MintManage = ({ currentObj, setOpenPosition, openPosition }) => {
+const MintManage = ({ currentObj}) => {
   const [value, setValue] = useState(0);
   const [mintValue, setMintValue] = useState(0);
   const navigate = useNavigate();
@@ -47,7 +47,6 @@ const MintManage = ({ currentObj, setOpenPosition, openPosition }) => {
             <div
               className="back-position"
               onClick={() => {
-                setOpenPosition(false);
                 navigate("/mint");
               }}
             >

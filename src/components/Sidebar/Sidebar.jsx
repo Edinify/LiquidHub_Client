@@ -5,6 +5,7 @@ import { ReactComponent as WalletLogo } from "../../assets/sidebar/wallet-alt-sv
 import { ReactComponent as SwapLogo } from "../../assets/sidebar/swap-horizontal-solid-svgrepo-com.svg";
 import { ReactComponent as MintLogo } from "../../assets/sidebar/coin-svgrepo-com.svg";
 import { useEffect, useRef, useState } from "react";
+import {ReactComponent as DeveloperLogo} from "../../assets/sidebar/developer-centerpublic-api-svgrepo-com.svg"
 
 const Sidebar = () => {
   const location = useLocation();
@@ -60,7 +61,7 @@ const Sidebar = () => {
           <div className="dropdown" ref={dropdownRef}>
             <Link
               onClick={handleClick}
-              to="/bridge"
+              to="/bridge/cosmos"
               className={location.pathname === "/bridge" ? "active" : ""}
             >
               IBC/Bridge
@@ -69,20 +70,20 @@ const Sidebar = () => {
               <ul>
                 <li>
                   <Link
-                    className={location.pathname === "/bridge" ? "active" : ""}
-                    to="/bridge"
+                    className={location.pathname === "/bridge/cosmos" ? "active" : ""}
+                    to="/bridge/cosmos"
                   >
                     Cosmos IBC Transfer
                   </Link>
                 </li>
                 <li>
-                  <Link to="/axel">Axelar Bridge</Link>
+                  <Link to="/bridge/axel">Axelar Bridge</Link>
                 </li>
                 <li>
-                  <Link to="/gavity">Gravity Bridge</Link>
+                  <Link to="/bridge/gravity">Gravity Bridge</Link>
                 </li>
                 <li>
-                  <Link to="/nomic">Nomic BTC</Link>
+                  <Link to="/bridge/nomic">Nomic BTC</Link>
                 </li>
               </ul>
             )}
@@ -115,9 +116,10 @@ const Sidebar = () => {
         </li>
         <li>
           <Link
-            to="/developer"
+            to="/developer/store"
             className={location.pathname === "/developer" ? "active" : ""}
           >
+            <DeveloperLogo/>
             Developer
           </Link>
         </li>
@@ -182,7 +184,7 @@ const Sidebar = () => {
             to="/developer"
             className={location.pathname === "/developer" ? "active" : ""}
           >
-            <DashboardLogo />
+            <DeveloperLogo />
           </Link>
         </li>
       </ul>

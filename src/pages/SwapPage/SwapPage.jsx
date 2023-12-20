@@ -177,7 +177,7 @@ const SwapPage = () => {
 
           <div className="swap-rate">
             {rateData.map((item) => (
-              <div className="swap-rate-container">
+              <div key={item.id} className="swap-rate-container">
                 <div className="swap-rate-fee">
                   <h5>{item.name}</h5>
                   {item.estimated && (

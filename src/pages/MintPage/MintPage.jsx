@@ -1,11 +1,9 @@
-import React, { useState } from "react";
 import "./mint.css";
 import Chart from "react-apexcharts";
 import MintImg from "../../assets/mint/dollar-minimalistic-svgrepo-com.svg";
-import MintManage from "./components/MintManage";
 import { useNavigate } from "react-router-dom";
 
-const MintPage = ({ setCurrentObj,openPosition,setOpenPosition }) => {
+const MintPage = ({ setCurrentObj }) => {
 
   const options = {
     chart: {
@@ -73,7 +71,7 @@ const MintPage = ({ setCurrentObj,openPosition,setOpenPosition }) => {
 
   return (
     <>
-      {openPosition && <MintManage />}
+
       <div className="mint-page">
         <div className="container">
           <div className="mint-content">
@@ -170,7 +168,6 @@ const MintPage = ({ setCurrentObj,openPosition,setOpenPosition }) => {
                         <button
                           onClick={() => {
                             setCurrentObj(item);
-                            setOpenPosition(true);
                             navigate("/mint/manage");
                           }}
                         >

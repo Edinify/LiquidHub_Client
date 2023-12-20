@@ -1,55 +1,54 @@
-
 import React from "react";
-import "./bridge.css";
 import { Link, useLocation, Outlet } from "react-router-dom";
+import "./developer.css"
 
-const BridgePage = () => {
+const DeveloperPage = () => {
   const location = useLocation();
 
   return (
-    <div className="bridge-page">
+    <div className="developer-page">
       <div className="container">
-        <div className="bridge-content">
-          <div className="bridge-links">
+        <div className="developer-content">
+          <div className="developer-links">
             <ul>
               <li>
                 <Link
-                  to="cosmos"
+                  to="store"
                   className={
-                    location.pathname === "/bridge/cosmos" ? "active" : ""
+                    location.pathname === "/developer/store" ? "active" : ""
                   }
                 >
-                  Cosmos IBC Transfer
+                  Store
                 </Link>
               </li>
               <li>
                 <Link
-                  to="axel"
+                  to="contract"
                   className={
-                    location.pathname === "/bridge/axel" ? "active" : ""
+                    location.pathname === "/developer/contract" ? "active" : ""
                   }
                 >
-                  Axel Bridge
+                  Instantiate
                 </Link>
               </li>
               <li>
                 <Link
-                  to="gravity"
+                  to="migrate"
                   className={
-                    location.pathname === "/bridge/gravity" ? "active" : ""
+                    location.pathname === "/developer/migrate" ? "active" : ""
                   }
                 >
-                  Gravity Bridge
+                  Migrate
                 </Link>
               </li>
               <li>
                 <Link
-                  to="nomic"
+                  to="query"
                   className={
-                    location.pathname === "/bridge/nomic" ? "active" : ""
+                    location.pathname === "/developer/query" ? "active" : ""
                   }
                 >
-                  Nomic BTC
+                  Query & Execute
                 </Link>
               </li>
             </ul>
@@ -61,4 +60,4 @@ const BridgePage = () => {
   );
 };
 
-export default BridgePage;
+export default DeveloperPage;
