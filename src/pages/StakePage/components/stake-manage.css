@@ -1,0 +1,391 @@
+.stake-manage {
+  width: 80%;
+}
+
+.stake-manage .stake-content .stake-header .back-position {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--dark-green);
+}
+
+.stake-manage .stake-content .stake-header .back-position:hover {
+  color: #60fbd0;
+}
+
+.stake-manage .stake-manage-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.stake-manage .stake-manage-cards .top-stake-cards {
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 20px;
+}
+
+.stake-manage .stake-manage-cards .top-stake-cards .valid-name-card {
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  border-radius: 16px;
+  padding: 16px;
+  color: white;
+  width: 40%;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .card-header {
+  display: flex;
+  position: relative;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .card-header
+  .header-active {
+  color: #60fbd0;
+  border: 1px solid #60fbd0;
+  background-color: rgba(96, 251, 208, 0.1);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  border-radius: 20px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .card-header
+  .header-img {
+  width: 40px;
+  height: 40px;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .card-header
+  .header-img
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .stake-card-context {
+  margin: 10px 0;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .stake-card-context
+  p {
+  color: var(--dark-green);
+  font-size: 14px;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .stake-uptime {
+  display: flex;
+  align-items: center;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .stake-uptime
+  .uptime-context {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .stake-uptime
+  .stake-time-icon {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-green);
+  border-radius: 4px;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .stake-uptime
+  .uptime-context
+  span:nth-child(1) {
+  color: var(--dark-green);
+  margin-bottom: 5px;
+}
+
+.stake-manage .stake-manage-cards .top-stake-cards .valid-stake-card {
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  border-radius: 16px;
+  padding: 16px;
+  color: white;
+  width: 40%;
+  margin-left: 30px;
+}
+
+.stake-manage .stake-manage-cards .stake-header {
+  color: var(--dark-green);
+  font-size: 14px;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-stake-card
+  .stake-context {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-stake-card
+  .stake-buttons
+  button {
+  border: none;
+  background-color: #279fe3;
+  padding: 8px;
+  margin: 0 5px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-stake-card
+  .stake-buttons
+  button:nth-child(1) {
+  cursor: pointer;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-stake-card
+  .stake-buttons
+  button:nth-child(2) {
+  color: #46d0d9;
+  background-color: transparent;
+  border: 1px solid #46d0d9;
+  opacity: 0.5;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-stake-card
+  .stake-buttons
+  button:nth-child(3) {
+  color: var(--dark-green);
+  background-color: transparent;
+  border: 1px solid var(--dark-green);
+  opacity: 0.3;
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards {
+  display: flex;
+  margin: 20px 0;
+}
+.stake-manage .stake-manage-cards .center-stake-cards .stake-user-card {
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  border-radius: 16px;
+  padding: 16px;
+  color: white;
+  width: 40%;
+}
+
+.stake-manage .stake-manage-cards .stake-user-card .stake-uptime {
+  display: flex;
+  align-items: center;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .stake-user-card
+  .stake-uptime
+  .uptime-context {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: flex-start;
+  margin: 10px;
+  justify-content: center;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .stake-user-card
+  .stake-uptime
+  .stake-time-icon {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-green);
+  border-radius: 4px;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .stake-user-card
+  .stake-uptime
+  .uptime-context
+  span:nth-child(1) {
+  color: var(--dark-green);
+  margin-bottom: 5px;
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards .user-commision {
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  border-radius: 16px;
+  padding: 16px;
+  color: white;
+  width: 40%;
+  margin-left: 30px;
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards .user-commision .commision-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards .user-commision .commision-img img{
+  width: 300px;
+  height: 200px;
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards .commision-rate{
+  border-top: 1px solid var(--dark-green);
+  display: flex;
+  height: 60px;
+
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards .commision-rate h6 {
+  color: var(--dark-green);
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards .commision-rate .max-rate {
+  border-right: 1px solid var(--dark-green);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards .commision-rate .change-rate {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width: 980px) {
+  .stake-manage .stake-manage-cards .top-stake-cards {
+    flex-direction: column;
+  }
+  .stake-manage .stake-manage-cards .top-stake-cards .valid-name-card {
+    width: 70%;
+  }
+  .stake-manage .stake-manage-cards .top-stake-cards .valid-stake-card {
+    margin: 0;
+    margin-top: 20px;
+    width: 70%;
+  }
+  .stake-manage
+  .stake-manage-cards
+  .top-stake-cards
+  .valid-name-card
+  .card-header {
+  flex-direction: column;
+}
+
+.stake-manage .stake-manage-cards .center-stake-cards {
+  flex-direction: column;
+}
+.stake-manage .stake-manage-cards .center-stake-cards .stake-user-card {
+  width: 70%;
+}
+.stake-manage .stake-manage-cards .center-stake-cards .user-commision{
+  margin: 0;
+  margin-top: 20px;
+  width: 70%;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .stake-manage {
+    width: 100%;
+  }
+  .stake-manage .stake-manage-cards .top-stake-cards .valid-name-card {
+    width: 100%;
+  }
+  .stake-manage .stake-manage-cards .top-stake-cards .valid-stake-card {
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .stake-manage .stake-manage-cards .center-stake-cards .stake-user-card {
+    width: 100%;
+  }
+  .stake-manage .stake-manage-cards .center-stake-cards .user-commision{
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  
+
+}

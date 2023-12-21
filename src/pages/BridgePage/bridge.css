@@ -26,7 +26,7 @@
 
 .bridge-page .bridge-links ul li a {
     text-decoration: none;
-    color: #607d8b;
+    color: var(--dark-green);
    
 }
 

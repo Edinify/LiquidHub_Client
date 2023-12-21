@@ -18,7 +18,7 @@
 }
 
 .swap-page .swap-content .swap-header p {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 16px;
   font-weight: 600;
 }
@@ -107,7 +107,7 @@
   .first-drop-container {
   display: flex;
   justify-content: space-between;
-  color: #607d8b;
+  color: var(--dark-green);
   padding: 10px;
 }
 
@@ -221,7 +221,7 @@
   .second-drop-container {
   display: flex;
   justify-content: space-between;
-  color: #607d8b;
+  color: var(--dark-green);
   padding: 10px;
 }
 
@@ -259,7 +259,7 @@
   width: 80%;
   /* margin-top: 30px; */
   padding: 30px 0;
-  border-bottom: 1px solid #607d8b;
+  border-bottom: 1px solid var(--dark-green);
 }
 .swap-rate-container {
   display: flex;
@@ -268,7 +268,7 @@
 }
 
 .swap-page .swap-content .swap-rate h5 {
-  color: #607d8b;
+  color: var(--dark-green);
   margin: 10px 0;
 }
 .swap-page .swap-content .swap-rate .estimated {
@@ -276,7 +276,7 @@
   border: 1px solid rgba(96, 125, 139, 0.5);
   font-size: 12px;
   font-weight: 500;
-  color: #607d8b;
+  color: var(--dark-green);
   /* margin-top: 1rem; */
 }
 
@@ -285,7 +285,7 @@
 }
 
 .swap-page .swap-content .swap-rate .swap-rate-container .swap-rate-fee h5 {
-  color: #607d8b;
+  color: var(--dark-green);
 }
 .swap-page
   .swap-content
@@ -324,7 +324,7 @@
   flex-direction: column;
 }
 .swap-page .swap-content .fixed-rate h5 {
-  color: #607d8b;
+  color: var(--dark-green);
   margin: 10px 0;
 }
 .swap-page .swap-content .fixed-rate .estimated {
@@ -332,7 +332,7 @@
   border: 1px solid rgba(96, 125, 139, 0.5);
   font-size: 12px;
   font-weight: 500;
-  color: #607d8b;
+  color: var(--dark-green);
   margin-top: 1rem;
 }
 
@@ -385,7 +385,7 @@
   border: 1px solid rgba(96, 125, 139, 0.5);
   font-size: 12px;
   font-weight: 500;
-  color: #607d8b;
+  color: var(--dark-green);
   margin-top: 1rem;
 }
 
