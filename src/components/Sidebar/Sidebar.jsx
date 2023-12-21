@@ -4,10 +4,31 @@ import { ReactComponent as DashboardLogo } from "../../assets/sidebar/dashboard-
 import { ReactComponent as WalletLogo } from "../../assets/sidebar/wallet-alt-svgrepo-com.svg";
 import { ReactComponent as SwapLogo } from "../../assets/sidebar/swap-horizontal-solid-svgrepo-com.svg";
 import { ReactComponent as MintLogo } from "../../assets/sidebar/coin-svgrepo-com.svg";
+import { useEffect, useRef, useState } from "react";
+import {ReactComponent as DeveloperLogo} from "../../assets/sidebar/developer-centerpublic-api-svgrepo-com.svg"
 
 const Sidebar = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
   // const [selectedManage, setSelectedManage] = useState(null);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
 
   return (
     <>
@@ -37,12 +58,36 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="/bridge"
-            className={location.pathname === "/bridge" ? "active" : ""}
-          >
-            IBC/Bridge
-          </Link>
+          <div className="dropdown" ref={dropdownRef}>
+            <Link
+              onClick={handleClick}
+              to="/bridge/cosmos"
+              className={location.pathname === "/bridge" ? "active" : ""}
+            >
+              IBC/Bridge
+            </Link>
+            {isOpen && (
+              <ul>
+                <li>
+                  <Link
+                    className={location.pathname === "/bridge/cosmos" ? "active" : ""}
+                    to="/bridge/cosmos"
+                  >
+                    Cosmos IBC Transfer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/bridge/axel">Axelar Bridge</Link>
+                </li>
+                <li>
+                  <Link to="/bridge/gravity">Gravity Bridge</Link>
+                </li>
+                <li>
+                  <Link to="/bridge/nomic">Nomic BTC</Link>
+                </li>
+              </ul>
+            )}
+          </div>
         </li>
         <li>
           <Link
@@ -71,9 +116,10 @@ const Sidebar = () => {
         </li>
         <li>
           <Link
-            to="/developer"
+            to="/developer/store"
             className={location.pathname === "/developer" ? "active" : ""}
           >
+            <DeveloperLogo/>
             Developer
           </Link>
         </li>
@@ -138,7 +184,7 @@ const Sidebar = () => {
             to="/developer"
             className={location.pathname === "/developer" ? "active" : ""}
           >
-            <DashboardLogo />
+            <DeveloperLogo />
           </Link>
         </li>
       </ul>

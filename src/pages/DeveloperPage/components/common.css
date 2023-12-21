@@ -1,0 +1,303 @@
+.store .store-header {
+  margin-top: 20px;
+}
+
+.store .store-header h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.store .store-content {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.store .store-content .left-store-content {
+  background-color: rgba(22, 23, 33, 0.75);
+  padding: 24px;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  border-radius: 16px;
+  margin-top: 10px;
+  width: 40%;
+}
+.store .store-content .left-store-content input[type="file"] {
+  display: none;
+}
+
+.store .store-content .left-store-content label {
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #607d8b;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.store .store-content .left-store-content .store-code {
+  margin-top: 20px;
+}
+
+.store .store-content .left-store-content .upload-btn {
+  display: flex;
+  align-items: center;
+}
+.store .store-content .left-store-content .upload-btn h3 {
+  color: #607d8b;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.store .store-content .left-store-content .store-code button {
+  border: none;
+  color: #161721;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  background: #269de4;
+  cursor: pointer;
+}
+
+.store .store-content .right-store-content {
+  background-color: rgba(22, 23, 33, 0.75);
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  border-radius: 16px;
+  margin-top: 10px;
+  /* width: 400px; */
+  width: 40%;
+  margin-left: 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store .store-content .right-store-content h5 {
+  color: #607d8b;
+}
+
+.store .contract-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.store .contract-form input {
+  background-color: #161721;
+  border: none;
+  margin: 10px 0;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  box-shadow: 0 0 0 1px #607d8b1a;
+}
+.store .contract-form input::placeholder {
+  color: #607d8b;
+}
+.store .contract-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #60fbd0;
+}
+
+.store .contract-form textarea {
+  background-color: #607d8b0d;
+  border: none;
+  color: #90a4ae;
+}
+.store .contract-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #607d8b40;
+}
+
+.store .left-store-content .store-code {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.store .left-store-content .store-code button:nth-child(1) {
+  color: #607d8b;
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  border: 1px solid #607d8b;
+}
+
+/* migrate */
+
+.store .migrate-form {
+  display: flex;
+  align-items: center;
+}
+
+.store .migrate-form input {
+  background-color: #161721;
+  border: none;
+  margin: 20px 10px;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  box-shadow: 0 0 0 1px #607d8b1a;
+  width: 35%;
+}
+
+.store .migrate-form input::placeholder {
+  color: #607d8b;
+}
+
+.store .migrate-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #60fbd0;
+}
+.store .contract-container {
+  display: flex;
+  align-items: center;
+}
+
+.store .contract-container .execute-btn  button{
+  border: none;
+  color: #161721;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  background: #269de4;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.store .contract-content {
+  background-color: rgba(22, 23, 33, 0.75);
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  border-radius: 16px;
+  /* margin-top: 10px; */
+  /* width: 400px; */
+  width: 100%;
+  margin-left: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.store .contract-content h5 {
+  color: #607d8b;
+}
+
+/* query */
+
+.store .query-container{
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.store .query-container .query-left{
+  width: 70%;
+} 
+.store .query-container .query-right{
+  margin-left: 20px;
+}
+.store .query-container .query-right h3 {
+  font-size: 14px;
+  color: #607d8b;
+}
+
+.store .query-container .query-right .saved-query{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(22,23,33,.75);
+  border-radius: 1rem;
+  border: 1px solid rgba(96,125,139,.25);
+  padding: 24px;
+  box-shadow: 2.8px 2.8px 2.2px #00000012, 6.7px 6.7px 5.3px #0000000d, 12.5px 12.5px 10px #0000000b, 22.3px 22.3px 17.9px #00000009, 41.8px 41.8px 33.4px #00000007, 100px 100px 80px #00000005;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.store .query-container .query-right .saved-query p {
+  font-size: 12px;
+  color: #607d8b;
+}
+
+.store .query-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.store .query-form label{
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.store .query-form input {
+  background-color: #161721;
+  border: none;
+  margin: 10px  0 20px 0;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  box-shadow: 0 0 0 1px #607d8b1a;
+  width: 100%;
+}
+
+.store.query .contract-content{
+  margin: 0;
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .store .store-content {
+    flex-direction: column;
+  }
+  .store .store-content .left-store-content {
+    width: 100%;
+  }
+  .store .store-content .right-store-content {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .store .migrate-form {
+    flex-direction: column;
+  }
+  .store .migrate-form input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .store .contract-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .store .contract-container {
+    flex-direction: column;
+  }
+  .store .contract-container .execute-btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .store .contract-container .execute-btn button{
+    margin: 0;
+  }
+
+
+  .store .query-container{
+    flex-direction: column;
+  }
+  .store .query-form input {
+    width: 100%;
+  }
+  .store .query-container .query-left{
+    width: 100%;
+  }
+  .store .query-container .query-right{
+    margin: 0;
+    margin: 10px 0;
+  }
+  .store .query-container .query-right .saved-query{
+    width: 100%;
+  }
+}

@@ -1,11 +1,10 @@
-import React, { useState } from "react";
 import "./mint.css";
 import Chart from "react-apexcharts";
 import MintImg from "../../assets/mint/dollar-minimalistic-svgrepo-com.svg";
-import MintManage from "./components/MintManage";
 import { useNavigate } from "react-router-dom";
 
-const MintPage = ({setCurrentObj}) => {
+const MintPage = ({ setCurrentObj }) => {
+
   const options = {
     chart: {
       type: "donut",
@@ -15,9 +14,7 @@ const MintPage = ({setCurrentObj}) => {
   };
 // 
   const series = [100];
-  const [openPosition, setOpenPosition] = useState(false);
-  const [selectedManage, setSelectedManage] = useState(null);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const mintData = [
     {
@@ -49,7 +46,7 @@ const MintPage = ({setCurrentObj}) => {
       id: 2,
       leftHead: "Deposited",
       leftImg: MintImg,
-      imgContent: "ARB",
+      imgContent: "USK",
       leftPrice1: "0.000",
       leftPrice2: "0.000",
       leftRateCon: "Interest Rate",
@@ -72,16 +69,9 @@ const MintPage = ({setCurrentObj}) => {
     },
   ];
 
-  console.log(setSelectedManage,"select")
-
   return (
     <>
-     { openPosition && <MintManage
-        selectedManage={selectedManage}
-        setOpenPosition={setOpenPosition}
-        openPosition={openPosition}
-      />
-     }
+
       <div className="mint-page">
         <div className="container">
           <div className="mint-content">
@@ -178,8 +168,7 @@ const MintPage = ({setCurrentObj}) => {
                         <button
                           onClick={() => {
                             setCurrentObj(item);
-                            setOpenPosition(true);
-                            navigate(`/mint/manage/${item.id}`)
+                            navigate("/mint/manage");
                           }}
                         >
                           Open Position

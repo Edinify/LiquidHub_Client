@@ -1,3 +1,7 @@
+:root {
+  
+  --bg-color:#20232e;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
   font-family: Montserrat, sans-serif;
 }
 body {
-  background-color: #20232e;
+  background-color: var(--bg-color)
 }
 
 .container {

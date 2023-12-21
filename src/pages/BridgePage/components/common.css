@@ -1,0 +1,302 @@
+/* common */
+.common-page {
+  margin: 20px 0;
+}
+.common-page .common-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.common-page .common-header {
+  text-align: center;
+}
+.common-page .common-header h2 {
+  color: #607d8b;
+  font-size: 14px;
+  font-weight: 600;
+}
+.common-page .common-content {
+  width: 80%;
+}
+
+/* cosmos top-content start */
+.common-page .common-content .common-top-content .input-drop-container {
+  width: 45%;
+  position: relative;
+}
+
+.common-page .common-content .common-top-content {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.common-page .common-content .common-top-content input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 16px;
+}
+.common-page .common-content .common-top-content input:focus {
+  outline: none;
+}
+
+.common-page .common-content .common-top-content input:nth-last-child(1) {
+  border-left: 1px solid rgba(96, 125, 139, 0.25);
+}
+
+.common-page
+  .common-content
+  .common-top-content
+  .input-drop-container
+  .input-container {
+  /* position: relative; */
+  box-shadow: 0 0 0 1px #607d8b1a, 2px 2px 10px #16172159;
+  background-color: #161721;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+.common-page
+  .common-content
+  .common-top-content
+  .input-container
+  .icon-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.common-page .common-content .common-top-content .first-drop {
+  width: 100%;
+  background-color: #161721;
+  z-index: 10;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 0 0 1px #607d8b40, 2px 2px 10px #16172159;
+  max-height: 11rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+}
+
+.common-page
+  .common-content
+  .common-top-content
+  .first-drop
+  .first-drop-container {
+  display: flex;
+  justify-content: space-between;
+  color: #607d8b;
+  padding: 10px;
+}
+
+.common-page
+  .common-content
+  .common-top-content
+  .first-drop
+  .first-drop-container
+  .drop-img {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.common-page
+  .common-content
+  .common-top-content
+  .first-drop
+  .first-drop-container
+  .drop-img
+  img {
+  margin-right: 10px;
+}
+
+.common-page .common-content .common-top-content .forward-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* cosmos-top finished */
+
+.common-page .from-to {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common-page .from-to span {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  color: #60fbd0;
+}
+.common-page .transfer-btn {
+  margin-top: 30px;
+}
+.common-page .transfer-btn button {
+  padding: 14px;
+  color: #161721;
+  background-color: #2a6287;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* cosmos page finished */
+
+/* axel */
+
+.common-page .axel-header {
+  text-align: center;
+}
+.common-page .axel-header h2 {
+  color: #607d8b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.common-page .axel-header strong {
+  color: #60fbd0;
+  border-bottom: 1px solid #60fbd0;
+}
+
+.common-page .left-drop {
+  box-shadow: 0 0 0 1px #607d8b1a, 2px 2px 10px #16172159;
+  background-color: #161721;
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  margin-right: 20px;
+}
+
+.common-page .left-drop input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 16px;
+}
+.common-page .left-drop input:focus {
+  outline: none;
+}
+
+.common-page .left-drop input:nth-last-child(1) {
+  border-left: 1px solid rgba(96, 125, 139, 0.25);
+}
+
+.common-page .left-drop .input-container {
+  position: relative;
+}
+
+.common-page .left-drop .input-container .icon-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.common-page .left-drop .first-drop {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: #161721;
+  z-index: 10;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 0 0 1px #607d8b40, 2px 2px 10px #16172159;
+  max-height: 11rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.common-page .left-drop .first-drop .first-drop-container {
+  display: flex;
+  justify-content: space-between;
+  color: #607d8b;
+  padding: 10px;
+}
+
+.common-page .left-drop .first-drop .first-drop-container .drop-img {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.common-page .left-drop .first-drop .first-drop-container .drop-img img {
+  margin-right: 10px;
+}
+
+.common-page .axel-source {
+  width: 50%;
+}
+
+.common-page .axel-source ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.common-page .axel-source ul li span {
+  color: #607d8b;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 5px 0;
+}
+.common-page .axel-source ul li span:nth-child(2) {
+  color: white;
+}
+
+.common-page .axel-source ul li span.wallet {
+  color: #607d8b;
+  border: 1px solid #607d8b;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* gravity */
+
+.common-page.gravity .left-drop{
+  width: 80%;
+}
+.common-page.gravity .left-drop .input-container {
+  width: 50%;
+} 
+.common-page.gravity .common-content .common-top-content {
+  justify-content: center;
+}
+
+/* nomic */
+.common-page.nomic .nomic-container{
+  margin-top: 30px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .common-page .common-content {
+    width: 100%;
+  }
+  .common-page .common-content .common-top-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .common-page .common-content .common-top-content .input-drop-container {
+    width: 100%;
+  }
+  .common-page .left-drop {
+    margin: 0;
+    width: 100%;
+  }
+  .common-page .left-drop .input-container {
+    width: 50%;
+  }
+  .common-page .common-content .common-top-content .forward-icon{
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .common-page .axel-source{
+    width: 100%;
+  }
+}

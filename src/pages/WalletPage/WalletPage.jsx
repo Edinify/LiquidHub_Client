@@ -6,7 +6,6 @@ import KelprImg from "../../assets/wallet/63edd5d1a40b9a48841ac1d2_Keplr Logo.sv
 import XDEFIImg from "../../assets/wallet/site-logo.svg"
 
 const WalletPage = () => {
-  // 
 
   const walletCard=[
     {id:1,img:SonarImg,text:"The Premier Kujira Experience "},
