@@ -352,8 +352,8 @@
 }
 
 .swap-page .swap-content .fixed-rate .fixed-rate-fee span {
-  border-color: #60fbd0;
-  color: #60fbd0;
+  border-color: var(--light-green);
+  color: var(--light-green);
   background: rgba(96, 251, 208, 0.1);
   padding: 8px;
   border-radius: 14px;

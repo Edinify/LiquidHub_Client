@@ -98,7 +98,7 @@
 }
 .store .contract-form input:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #60fbd0;
+  box-shadow: 0 0 0 1px var(--light-green);
 }
 
 .store .contract-form textarea {
@@ -149,7 +149,7 @@
 
 .store .migrate-form input:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #60fbd0;
+  box-shadow: 0 0 0 1px var(--light-green);
 }
 .store .contract-container {
   display: flex;

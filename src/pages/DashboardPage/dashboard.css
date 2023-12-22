@@ -208,7 +208,7 @@
   .box-container
   .box-content
   .stake-btn {
-  background: linear-gradient(45deg, #1e92e6, #60fbd0 75%, #1c6599 150%);
+  background: linear-gradient(45deg, #1e92e6, var(--light-green) 75%, #1c6599 150%);
   color: #161721;
   border: none;
   padding: 12px;
@@ -223,7 +223,7 @@
 .fund-btn {
   color: #46d0d9;
   background: transparent;
-  border: 1px solid #60fbd0;
+  border: 1px solid var(--light-green);
   padding: 12px;
   border-radius: 4px;
   width: 100%;

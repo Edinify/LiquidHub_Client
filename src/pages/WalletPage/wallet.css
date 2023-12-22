@@ -55,7 +55,7 @@
 }
 
 .wallet-page .wallet-content .wallet-cards .wallet-card .wallet-box:hover {
-  border:1px solid #60fbd0;
+  border:1px solid var(--light-green);
 }
 
 .wallet-page .wallet-content .wallet-cards .wallet-card .wallet-box h2 {

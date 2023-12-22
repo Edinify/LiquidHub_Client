@@ -130,7 +130,7 @@
   display: flex;
   align-items: center;
   margin: 0 5px;
-  color: #60fbd0;
+  color: var(--light-green);
 }
 .common-page .transfer-btn {
   margin-top: 30px;
@@ -157,8 +157,8 @@
 }
 
 .common-page .axel-header strong {
-  color: #60fbd0;
-  border-bottom: 1px solid #60fbd0;
+  color: var(--light-green);
+  border-bottom: 1px solid var(--light-green);
 }
 
 .common-page .left-drop {

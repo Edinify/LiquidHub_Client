@@ -10,13 +10,15 @@
 }
 
 .stake-manage .stake-content .stake-header .back-position:hover {
-  color: #60fbd0;
+  color: var(--light-green);
 }
 
 .stake-manage .stake-manage-cards {
   display: flex;
   flex-direction: column;
 }
+
+/* top start */
 
 .stake-manage .stake-manage-cards .top-stake-cards {
   /* border: 1px solid red; */
@@ -49,8 +51,8 @@
   .valid-name-card
   .card-header
   .header-active {
-  color: #60fbd0;
-  border: 1px solid #60fbd0;
+  color: var(--light-green);
+  border: 1px solid var(--light-green);
   background-color: rgba(96, 251, 208, 0.1);
   font-size: 10px;
   display: flex;
@@ -222,6 +224,10 @@
   opacity: 0.3;
 }
 
+/* top finished */
+
+/* center start */
+
 .stake-manage .stake-manage-cards .center-stake-cards {
   display: flex;
   margin: 20px 0;
@@ -288,29 +294,41 @@
   margin-left: 30px;
 }
 
-.stake-manage .stake-manage-cards .center-stake-cards .user-commision .commision-img{
+.stake-manage
+  .stake-manage-cards
+  .center-stake-cards
+  .user-commision
+  .commision-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.stake-manage .stake-manage-cards .center-stake-cards .user-commision .commision-img img{
+.stake-manage
+  .stake-manage-cards
+  .center-stake-cards
+  .user-commision
+  .commision-img
+  img {
   width: 300px;
   height: 200px;
 }
 
-.stake-manage .stake-manage-cards .center-stake-cards .commision-rate{
+.stake-manage .stake-manage-cards .center-stake-cards .commision-rate {
   border-top: 1px solid var(--dark-green);
   display: flex;
   height: 60px;
-
 }
 
 .stake-manage .stake-manage-cards .center-stake-cards .commision-rate h6 {
   color: var(--dark-green);
 }
 
-.stake-manage .stake-manage-cards .center-stake-cards .commision-rate .max-rate {
+.stake-manage
+  .stake-manage-cards
+  .center-stake-cards
+  .commision-rate
+  .max-rate {
   border-right: 1px solid var(--dark-green);
   height: 100%;
   display: flex;
@@ -320,7 +338,11 @@
   justify-content: center;
 }
 
-.stake-manage .stake-manage-cards .center-stake-cards .commision-rate .change-rate {
+.stake-manage
+  .stake-manage-cards
+  .center-stake-cards
+  .commision-rate
+  .change-rate {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -329,7 +351,62 @@
   justify-content: center;
 }
 
+/* center finished */
 
+/* bottom start */
+
+.stake-manage .stake-manage-cards .bottom-stake-cards {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.stake-manage .stake-manage-cards .bottom-stake-cards .reward-card {
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  border-radius: 16px;
+  padding: 16px;
+  color: white;
+  width: 40%;
+}
+
+.stake-manage .stake-manage-cards .bottom-stake-cards .adress-card {
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  border-radius: 16px;
+  padding: 16px;
+  color: white;
+  margin-left: 30px;
+  width: 40%;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .bottom-stake-cards
+  .reward-card
+  .reward-button {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid red;
+  border: 1px solid #60fbd0;
+  opacity: 0.8;
+  color: #60fbd0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.stake-manage
+  .stake-manage-cards
+  .bottom-stake-cards
+  .reward-card
+  .reward-button
+  h3 {
+  font-size: 14px;
+}
+
+/* bottom finished */
 
 @media screen and (max-width: 980px) {
   .stake-manage .stake-manage-cards .top-stake-cards {
@@ -344,24 +421,35 @@
     width: 70%;
   }
   .stake-manage
-  .stake-manage-cards
-  .top-stake-cards
-  .valid-name-card
-  .card-header {
-  flex-direction: column;
-}
+    .stake-manage-cards
+    .top-stake-cards
+    .valid-name-card
+    .card-header {
+    flex-direction: column;
+  }
 
-.stake-manage .stake-manage-cards .center-stake-cards {
-  flex-direction: column;
-}
-.stake-manage .stake-manage-cards .center-stake-cards .stake-user-card {
-  width: 70%;
-}
-.stake-manage .stake-manage-cards .center-stake-cards .user-commision{
-  margin: 0;
-  margin-top: 20px;
-  width: 70%;
-}
+  .stake-manage .stake-manage-cards .center-stake-cards {
+    flex-direction: column;
+  }
+  .stake-manage .stake-manage-cards .center-stake-cards .stake-user-card {
+    width: 70%;
+  }
+  .stake-manage .stake-manage-cards .center-stake-cards .user-commision {
+    margin: 0;
+    margin-top: 20px;
+    width: 70%;
+  }
+  .stake-manage .stake-manage-cards .bottom-stake-cards {
+    flex-direction: column;
+  }
+  .stake-manage .stake-manage-cards .bottom-stake-cards .reward-card {
+    width: 70%;
+  }
+  .stake-manage .stake-manage-cards .bottom-stake-cards .adress-card {
+    width: 70%;
+    margin: 0;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -380,12 +468,17 @@
   .stake-manage .stake-manage-cards .center-stake-cards .stake-user-card {
     width: 100%;
   }
-  .stake-manage .stake-manage-cards .center-stake-cards .user-commision{
+  .stake-manage .stake-manage-cards .center-stake-cards .user-commision {
     margin: 0;
     margin-top: 20px;
     width: 100%;
   }
 
-  
+  .stake-manage .stake-manage-cards .bottom-stake-cards .reward-card {
+    width: 100%;
+  }
 
+  .stake-manage .stake-manage-cards .bottom-stake-cards .adress-card {
+    width: 100%;
+  }
 }

@@ -202,7 +202,7 @@
   .stake-search
   .search-right
   .select-d:hover {
-  border: 1px solid #60fbd0;
+  border: 1px solid var(--light-green);
   color: white;
 }
 
@@ -212,7 +212,7 @@
   .stake-search
   .search-right
   .select-d.active {
-  border: 1px solid #60fbd0;
+  border: 1px solid var(--light-green);
   color: white;
 }
 
