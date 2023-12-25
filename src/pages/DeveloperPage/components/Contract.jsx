@@ -18,7 +18,7 @@ const Contract = () => {
             </form>
             <div className="store-code">
             <button>Add Token</button>
-              <button>Store Code</button>
+              <button>Instantiate</button>
              
             </div>
           </div>

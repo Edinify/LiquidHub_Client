@@ -15,8 +15,8 @@ const Migrate = () => {
           />
           <input type="text" placeholder="Migrate Code ID" />
         </form>
-        <div className="contract-container">
-        <div className="contract-content">
+        <div className="contract-container ">
+        <div className="contract-content migrate ">
             <h5>No Contracts for code ID {codeId}</h5>
           </div>
           <div className="execute-btn">

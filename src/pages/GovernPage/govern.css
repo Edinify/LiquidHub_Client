@@ -1,0 +1,210 @@
+.govern-page .govern-content .govern-header h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  /* margin-left: 20px; */
+}
+
+.govern-page .govern-content .govern-header p {
+  color: var(--dark-green);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.govern-page .govern-content .stakes-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.govern-page .govern-content .stakes-container .total-stake {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  width: 45%;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.govern-page .govern-content .stakes-container span {
+  color: var(--dark-green);
+  font-size: 16px;
+}
+.govern-page .govern-content .stakes-container h4 {
+  color: white;
+  font-size: 25px;
+  line-height: 1.8;
+}
+
+.govern-page .govern-content .stakes-container .my-stake {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  width: 50%;
+  padding: 16px;
+  border-radius: 16px;
+  margin-left: 30px;
+}
+
+.govern-page .govern-content .stakes-container .my-stake .stake-btn button {
+  border: none;
+  background-color: #279fe3;
+  padding: 8px;
+  margin: 0 5px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.govern-page .govern-content .core-header {
+  margin-top: 40px;
+}
+
+.govern-page .govern-content .core-header h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.govern-page .govern-content .core-header p {
+  color: var(--dark-green);
+  opacity: 0.7;
+}
+
+.govern-page .govern-content .core-cards {
+  margin: 20px 0;
+}
+
+.govern-page .govern-content .core-cards .core-card {
+  display: flex;
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  padding: 16px;
+  border-radius: 16px;
+  margin: 10px 0;
+}
+
+.govern-page .govern-content .core-cards .core-card .core-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.govern-page .govern-content .core-cards .core-card .core-content p {
+  color: var(--dark-green);
+  opacity: 0.9;
+}
+.govern-page
+  .govern-content
+  .core-cards
+  .core-card
+  .core-content
+  p:nth-child(2) {
+  color: white;
+  margin: 15px 0;
+}
+
+.govern-page
+  .govern-content
+  .core-cards
+  .core-card
+  .core-content
+  .view-btn
+  button {
+  padding: 10px;
+  text-align: center;
+  color: var(--dark-green);
+  background-color: transparent;
+  border: 1px solid var(--dark-green);
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.govern-page
+  .govern-content
+  .core-cards
+  .core-card
+  .core-content
+  .view-btn
+  button:hover {
+  border: 1px solid var(--light-green);
+  color: white;
+}
+
+.govern-page .govern-content .core-cards .core-card .core-date {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.govern-page .govern-content .core-cards .core-card .core-date .vote-status,
+.govern-page .govern-content .core-cards .core-card .core-date .vote-date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.govern-page
+  .govern-content
+  .core-cards
+  .core-card
+  .core-date
+  .vote-status
+  span,
+.govern-page .govern-content .core-cards .core-card .core-date .vote-date span {
+  color: var(--dark-green);
+}
+.govern-page
+  .govern-content
+  .core-cards
+  .core-card
+  .core-date
+  .vote-status
+  strong,
+.govern-page
+  .govern-content
+  .core-cards
+  .core-card
+  .core-date
+  .vote-date
+  strong {
+  color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .govern-page .govern-content .stakes-container .my-stake {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .govern-page .govern-content .core-header h3 {
+    font-size: 16px;
+  }
+  .govern-page .govern-content .core-header p {
+    font-size: 14px;
+  }
+  .govern-page .govern-content .core-cards .core-card {
+    flex-direction: column;
+  }
+  .govern-page .govern-content .core-cards .core-card .core-content {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .govern-page .govern-content .core-cards .core-card .core-date {
+    width: 100%;
+  }
+  .govern-page .govern-content .core-cards .core-card .core-date .vote-status,
+  .govern-page .govern-content .core-cards .core-card .core-date .vote-date {
+    margin: 5px 0;
+  }
+
+  .govern-page .govern-content .core-cards .core-card .core-content p {
+    font-size: 14px;
+  }
+}

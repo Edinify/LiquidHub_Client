@@ -390,9 +390,9 @@
   margin-top: 20px;
   padding: 10px;
   border: 1px solid red;
-  border: 1px solid #60fbd0;
+  border: 1px solid var(--light-green);
   opacity: 0.8;
-  color: #60fbd0;
+  color: var(--light-green);
   border-radius: 4px;
   cursor: pointer;
 }

@@ -1,0 +1,326 @@
+.sentinel-page .sentinel-content .sentinel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sentinel-page .sentinel-content .sentinel-header .header-left h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  /* margin-left: 20px; */
+}
+
+.sentinel-page .sentinel-content .sentinel-header .header-left p {
+  color: var(--dark-green);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.sentinel-page .sentinel-content .sentinel-header .header-right {
+  display: flex;
+}
+
+.sentinel-page .sentinel-content .sentinel-header .header-right span {
+  color: #90a4ae;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sentinel-page .sentinel-content .sentinel-header .header-right:hover span {
+  color: var(--light-green);
+}
+
+.sentinel-content .members-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  width: 70%;
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+.sentinel-content .members-card .members-card-content h3 {
+  color: white;
+  font-weight: 400;
+}
+
+.sentinel-content .members-card .members-card-content p {
+  color: var(--dark-green);
+  font-weight: 400;
+}
+
+.sentinel-content .members-card .members-card-content .member-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.sentinel-content .members-card .members-card-content .member-imgs .member-img {
+  border-radius: 20px;
+
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.sentinel-content
+  .members-card
+  .members-card-content
+  .member-imgs
+  .member-img
+  ul
+  li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.sentinel-content
+  .members-card
+  .members-card-content
+  .member-imgs
+  .member-img
+  img {
+  width: 40px;
+  height: 40px;
+}
+
+.sentinel-content
+  .members-card
+  .members-card-content
+  .member-imgs
+  .member-img
+  span
+  a {
+  color: var(--dark-green);
+  text-decoration: none;
+}
+
+.sentinel-content .proposals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 30px 0;
+}
+
+.sentinel-content .proposals h3 {
+  color: white;
+}
+
+.sentinel-content .proposals .submit-propos button {
+  width: 100%;
+  color: var(--light-green);
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 1px solid var(--light-green);
+  cursor: pointer;
+}
+
+.sentinel-content .proposal-text {
+  text-align: center;
+  width: 70%;
+  margin-bottom: 30px;
+}
+.sentinel-content .proposal-text h3 {
+  color: var(--dark-green);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1100px) {
+  .sentinel-page .sentinel-content .sentinel-header {
+    flex-direction: column;
+  }
+  .sentinel-page .sentinel-content .sentinel-header .header-right {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .sentinel-content .members-card {
+    width: 100%;
+  }
+  .sentinel-content .proposals {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sentinel-content .proposal-text {
+    width: 100%;
+  }
+}
+
+/* govern manage */
+
+.govern-manage {
+  width: 80%;
+}
+
+.govern-manage .govern-content .govern-header h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.govern-manage .govern-content .govern-header p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.govern-manage .govern-content .govern-header span {
+  font-weight: 600;
+  font-size: 12px;
+  transition: 0.5s;
+}
+
+.govern-manage .govern-content .govern-header .back-position {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--dark-green);
+}
+
+.govern-manage .govern-content .govern-header .back-position:hover {
+  color: var(--light-green);
+}
+
+.govern-manage .govern-cards {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px #16172159;
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  background-color: rgba(22, 23, 33, 0.75);
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+/* .govern-manage .govern-cards .status {
+} */
+
+.govern-manage .govern-cards .status span {
+  color: var(--dark-green);
+  opacity: 0.7;
+}
+
+.govern-manage .govern-cards .status strong {
+  color: var(--light-green);
+  opacity: 0.7;
+}
+
+.govern-manage .propos-voted {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.govern-manage .propos-voted .vote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.govern-manage .propos-voted .vote-container span {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--dark-green);
+}
+
+.govern-manage .propos-voted .vote-container h5 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 5px 0;
+  color: white;
+}
+
+.govern-manage .govern-cards.vote h4 {
+  color: white;
+}
+
+.govern-manage .vote-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.govern-manage .vote-header .left-side {
+  width: 50%;
+}
+
+.govern-manage .vote-header .left-side p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: var(--dark-green);
+}
+
+.govern-manage .vote-header .right-side {
+  width: 30%;
+}
+
+.govern-manage .vote-header .right-side h6 {
+  font-size: 14px;
+  margin: 10px 0;
+  color: white;
+}
+
+.govern-manage .right-side .filter-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 0 0 1px #607d8b1a, 2px 2px 10px #16172159;
+  background-color: #161721;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.govern-manage .right-side .filter-type p{
+  color: white;
+}
+
+
+
+.govern-manage .right-side .filter-type input:focus {
+  outline: none;
+}
+
+.govern-manage .right-side .status-dropdown {
+  position: absolute;
+  bottom: 40px;
+  background-color: rgba(96, 125, 139, 0.5);
+  color: white;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 4px 4px 16px #0000001a;
+  border-radius: 8px;
+}
+
+.govern-manage .right-side .status-dropdown ul{
+  background-color: rgba(96,125,139,.5);
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+
+.govern-manage .right-side .select-vote li {
+  list-style: none;
+
+
+
+}
+
+.govern-manage .right-side .select-vote li:hover {
+  background-color:   rgba(96,125,139,.95);
+}

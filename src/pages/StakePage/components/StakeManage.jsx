@@ -49,7 +49,7 @@ const StakeManage = ({ selectedList }) => {
   console.log(selectedList, "selected");
   return (
     <>
-      {openModal && <StakeModal setOpenModal={setOpenModal} />}
+      {openModal && <StakeModal setOpenModal={setOpenModal} type="stake" />}
       <div className="stake-manage">
         <div className="container">
           <div className="stake-content">

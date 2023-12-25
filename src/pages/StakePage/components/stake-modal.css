@@ -26,6 +26,32 @@
   width: 100%;
 }
 
+
+.stake-modal-container.sentinel form{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.stake-modal-container.sentinel form input {
+  margin-top: 10px;
+}
+
+.stake-modal-container.sentinel form input ,.stake-modal-container.sentinel form textarea  {
+  background-color: transparent;
+  background-color: #161721;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(96, 125, 139, 0.5);
+  color: white;
+}
+
+.stake-modal-container.sentinel form input::placeholder ,.stake-modal-container.sentinel form textarea::placeholder{
+  color: var(--dark-green);
+}
+.stake-modal-container.sentinel form textarea  {
+  margin: 10px 0;
+}
 .stake-modal-container strong {
   color: white;
 }
@@ -61,7 +87,7 @@
 }
 
 .stake-modal-container .modal-input h4 {
-  color: white;
+  color: var(--dark-green);
 }
 .stake-modal-container .modal-input input {
   background-color: transparent;
@@ -99,6 +125,14 @@
     justify-content: center;
 }
 
+.stake-modal-container .stake-btn.sentinel{
+  justify-content: flex-end;
+  margin: 0;
+  margin-top: 10px;
+  opacity: 0.4;
+
+}
+
 .stake-modal-container .stake-btn button {
     border: none;
   background-color: #279fe3;
@@ -107,6 +141,13 @@
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
+}
+
+
+@media screen and (max-width:1100px) {
+  .stake-modal-container{
+    width: 50%;
+  }
 }
 
 

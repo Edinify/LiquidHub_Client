@@ -60,6 +60,16 @@
   cursor: pointer;
 }
 
+.store .store-content.store .left-store-content .store-code button {
+  border: none;
+  color: #161721;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  background: #269de4;
+  cursor: pointer;
+}
+
 .store .store-content .right-store-content {
   background-color: rgba(22, 23, 33, 0.75);
   border: 1px solid rgba(96, 125, 139, 0.25);
@@ -154,6 +164,7 @@
 .store .contract-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .store .contract-container .execute-btn  button{
@@ -164,16 +175,24 @@
   font-weight: 600;
   background: #269de4;
   cursor: pointer;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
+.store .contract-content.migrate {
+  background-color: rgba(22, 23, 33, 0.75);
+  border: 1px solid rgba(96, 125, 139, 0.25);
+  border-radius: 16px;
+  width: 80%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .store .contract-content {
   background-color: rgba(22, 23, 33, 0.75);
   border: 1px solid rgba(96, 125, 139, 0.25);
   border-radius: 16px;
-  /* margin-top: 10px; */
-  /* width: 400px; */
   width: 100%;
-  margin-left: 10px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -268,6 +287,10 @@
   .store .contract-content {
     width: 100%;
     margin: 0;
+  }
+
+  .store .contract-content.migrate{
+    width: 100%;
   }
 
   .store .contract-container {
