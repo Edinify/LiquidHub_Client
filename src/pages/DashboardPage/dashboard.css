@@ -69,7 +69,7 @@
   .box-data
   h3 {
   font-size: 12px;
-  color: #607d8b;
+  color: var(--dark-green);
   font-weight: 600;
   margin-bottom: 4px;
 }
@@ -94,7 +94,7 @@
   .box-content
   .box-data
   small {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 12px;
 }
 .dashboard-page
@@ -183,7 +183,7 @@
   .staked-balance
   h3 {
   font-size: 16px;
-  color: #607d8b !important;
+  color: var(--dark-green) !important;
 }
 
 .dashboard-page
@@ -208,7 +208,7 @@
   .box-container
   .box-content
   .stake-btn {
-  background: linear-gradient(45deg, #1e92e6, #60fbd0 75%, #1c6599 150%);
+  background: linear-gradient(45deg, #1e92e6, var(--light-green) 75%, #1c6599 150%);
   color: #161721;
   border: none;
   padding: 12px;
@@ -223,7 +223,7 @@
 .fund-btn {
   color: #46d0d9;
   background: transparent;
-  border: 1px solid #60fbd0;
+  border: 1px solid var(--light-green);
   padding: 12px;
   border-radius: 4px;
   width: 100%;

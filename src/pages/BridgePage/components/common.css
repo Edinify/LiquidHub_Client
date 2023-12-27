@@ -11,7 +11,7 @@
   text-align: center;
 }
 .common-page .common-header h2 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 14px;
   font-weight: 600;
 }
@@ -89,7 +89,7 @@
   .first-drop-container {
   display: flex;
   justify-content: space-between;
-  color: #607d8b;
+  color: var(--dark-green);
   padding: 10px;
 }
 
@@ -130,7 +130,7 @@
   display: flex;
   align-items: center;
   margin: 0 5px;
-  color: #60fbd0;
+  color: var(--light-green);
 }
 .common-page .transfer-btn {
   margin-top: 30px;
@@ -151,14 +151,14 @@
   text-align: center;
 }
 .common-page .axel-header h2 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 14px;
   font-weight: 600;
 }
 
 .common-page .axel-header strong {
-  color: #60fbd0;
-  border-bottom: 1px solid #60fbd0;
+  color: var(--light-green);
+  border-bottom: 1px solid var(--light-green);
 }
 
 .common-page .left-drop {
@@ -213,7 +213,7 @@
 .common-page .left-drop .first-drop .first-drop-container {
   display: flex;
   justify-content: space-between;
-  color: #607d8b;
+  color: var(--dark-green);
   padding: 10px;
 }
 
@@ -236,7 +236,7 @@
   justify-content: space-between;
 }
 .common-page .axel-source ul li span {
-  color: #607d8b;
+  color: var(--dark-green);
   font-weight: 500;
   font-size: 12px;
   margin: 5px 0;
@@ -246,8 +246,8 @@
 }
 
 .common-page .axel-source ul li span.wallet {
-  color: #607d8b;
-  border: 1px solid #607d8b;
+  color: var(--dark-green);
+  border: 1px solid var(--dark-green);
   padding: 4px;
   border-radius: 4px;
 }

@@ -9,7 +9,7 @@
 }
 .mint-manage .mint-content .mint-header span {
   font-weight: 600;
-  font-weight: 12px;
+  font-size: 12px;
   transition: 0.5s;
 }
 
@@ -17,11 +17,11 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: #607d8b;
+  color: var(--dark-green);
 }
 
 .mint-manage .mint-content .mint-header .back-position:hover {
-  color: #60fbd0;
+  color: var(--light-green);
 }
 
 .mint-card.manage {
@@ -33,7 +33,7 @@
   width: 50%;
 }
 .mint-manage-left .manage-left-t h3 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 12px;
 }
 
@@ -78,7 +78,7 @@
   text-align: center;
 }
 .deposit-input .deposit-value:focus {
-  box-shadow: 0 0 0 1px #60fbd0;
+  box-shadow: 0 0 0 1px var(--light-green);
   border: 1px solid red;
 }
 .deposit-input .deposit-value input:focus {
@@ -139,7 +139,7 @@
 /* manage-left -bottom -start */
 
 .mint-manage-left .manage-left-b h3 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 12px;
 }
 
@@ -230,7 +230,7 @@
 
 .mint-manage-right .mint-right-top .box-data h3 {
   font-size: 12px;
-  color: #607d8b;
+  color: var(--dark-green);
   font-weight: 600;
   margin-bottom: 4px;
 }
@@ -240,7 +240,7 @@
 }
 
 .mint-manage-right .mint-right-top .box-data small {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 12px;
 }
 .mint-manage-right .mint-right-top .box-data.box-1 {
@@ -278,7 +278,7 @@
 }
 
 .mint-manage-right  .mint-right-b .mint-fee-container .mint-fee  span {
-  color: #607d8b;
+  color: var(--dark-green);
  
 }
 

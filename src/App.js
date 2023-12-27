@@ -19,10 +19,18 @@ import Store from "./pages/DeveloperPage/components/Store";
 import Contract from "./pages/DeveloperPage/components/Contract";
 import Migrate from "./pages/DeveloperPage/components/Migrate";
 import Query from "./pages/DeveloperPage/components/Query";
+import StakePage from "./pages/StakePage/StakePage";
+import StakeManage from "./pages/StakePage/components/StakeManage";
+import GovernPage from "./pages/GovernPage/GovernPage";
+import  Chain from "./pages/GovernPage/components/Chain"
+import  Sentinel from "./pages/GovernPage/components/Sentinel"
+import GovernManage from "./pages/GovernPage/components/GovernManage";
 
 function App() {
   const [currentObj, setCurrentObj] = useState();
   const [openPosition, setOpenPosition] = useState(false);
+  const [selectedList,setSelectedList] = useState({})
+  const [propos,setPropos] = useState()
 
   return (
     <div className="App">
@@ -62,6 +70,13 @@ function App() {
                 />
               }
             />
+            <Route path="/stake" element={<StakePage setSelectedList={setSelectedList} />} />
+            <Route path="/stake/manage" element={<StakeManage selectedList={selectedList} />} />
+            <Route path="/govern" element={<GovernPage/>} >
+              <Route path="chain" element={<Chain setPropos={setPropos} propos={propos} />} />
+              <Route path="sentinel" element={<Sentinel/>} />
+              </Route>
+              <Route path="/govern/manage" element={<GovernManage propos={propos} />} />
             <Route path="/developer" element={<DeveloperPage />}>
               <Route index element={<Store />} />
               <Route path="store" element={<Store />} />
@@ -69,6 +84,7 @@ function App() {
               <Route path="migrate" element={<Migrate/>} />
               <Route path="query" element={<Query/>} />
             </Route>
+
           </Routes>
         </div>
       </div>

@@ -1,6 +1,8 @@
 :root {
   
   --bg-color:#20232e;
+  --dark-green:#607d8b;
+  --light-green:#60fbd0;
 }
 * {
   margin: 0;

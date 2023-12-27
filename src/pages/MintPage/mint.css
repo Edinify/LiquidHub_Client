@@ -7,7 +7,7 @@
   font-weight: 400;
 }
 .mint-page .mint-content .mint-header span {
-  color: #607d8b;
+  color: var(--dark-green);
   font-weight: 600;
   font-weight: 14px;
 }
@@ -81,7 +81,7 @@
   .card-top-left
   .left-header
   h3 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 12px;
 }
 
@@ -143,7 +143,7 @@
   .left-content-container
   .left-content-price
   h6 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 12px;
 }
 
@@ -158,7 +158,7 @@
   .card-top-left
   .left-rate
   h5 {
-  color: #607d8b;
+  color: var(--dark-green);
 }
 
 
@@ -200,7 +200,7 @@
   .card-top-right
   .right-header
   h3 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 12px;
 }
 
@@ -262,7 +262,7 @@
   .right-content-container
   .right-content-price
   h6 {
-  color: #607d8b;
+  color: var(--dark-green);
 }
 
 
@@ -276,7 +276,7 @@
   .card-top-right
   .right-rate
   h5 {
-  color: #607d8b;
+  color: var(--dark-green);
 }
 
 
@@ -338,7 +338,7 @@
   .mint-card-bottom
   .left-header
   h2 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 12px;
 }
 
@@ -374,7 +374,7 @@
 
 .mint-card-bottom .mint-card-top-left .left-content-price h5 {
   font-size: 12px;
-  color: #607d8b;
+  color: var(--dark-green);
 }
 
 .mint-card-bottom .mint-card-top-left .left-content-price h6 {
@@ -404,7 +404,7 @@
 }
 
  .mint-content .mint-cards .mint-content-container .mint-chart h5 {
-  color: #607d8b;
+  color: var(--dark-green);
   font-size: 14px;
   font-weight: 600;
 }

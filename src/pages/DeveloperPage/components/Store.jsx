@@ -10,7 +10,7 @@ const Store = () => {
             WASM File
           </h3>
         </div>
-        <div className="store-content">
+        <div className="store-content store ">
           <div className="left-store-content">
             <div className="upload-btn">
             <input type="file" id='uploadBtn' />

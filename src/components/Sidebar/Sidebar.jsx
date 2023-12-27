@@ -5,12 +5,14 @@ import { ReactComponent as WalletLogo } from "../../assets/sidebar/wallet-alt-sv
 import { ReactComponent as SwapLogo } from "../../assets/sidebar/swap-horizontal-solid-svgrepo-com.svg";
 import { ReactComponent as MintLogo } from "../../assets/sidebar/coin-svgrepo-com.svg";
 import { useEffect, useRef, useState } from "react";
-import {ReactComponent as DeveloperLogo} from "../../assets/sidebar/developer-centerpublic-api-svgrepo-com.svg"
+import { ReactComponent as DeveloperLogo } from "../../assets/sidebar/developer-centerpublic-api-svgrepo-com.svg";
 
 const Sidebar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const [openGovern, setOpenGovern] = useState(false);
   const dropdownRef = useRef(null);
+  const governRef = useRef();
   // const [selectedManage, setSelectedManage] = useState(null);
 
   const handleClick = () => {
@@ -20,6 +22,13 @@ const Sidebar = () => {
   const handleOutsideClick = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsOpen(false);
+      setOpenGovern(true);
+    }
+  };
+
+  const handleOutsideGovernClick = (event) => {
+    if (governRef.current && !governRef.current.contains(event.target)) {
+      setOpenGovern(false);
     }
   };
 
@@ -27,6 +36,13 @@ const Sidebar = () => {
     document.addEventListener("click", handleOutsideClick);
     return () => {
       document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideGovernClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideGovernClick);
     };
   }, []);
 
@@ -70,20 +86,28 @@ const Sidebar = () => {
               <ul>
                 <li>
                   <Link
-                    className={location.pathname === "/bridge/cosmos" ? "active" : ""}
+                    className={
+                      location.pathname === "/bridge/cosmos" ? "active" : ""
+                    }
                     to="/bridge/cosmos"
                   >
                     Cosmos IBC Transfer
                   </Link>
                 </li>
                 <li>
-                  <Link to="/bridge/axel">Axelar Bridge</Link>
+                  <Link  className={
+                      location.pathname === "/bridge/axel" ? "active" : ""
+                    } to="/bridge/axel">Axelar Bridge</Link>
                 </li>
                 <li>
-                  <Link to="/bridge/gravity">Gravity Bridge</Link>
+                  <Link  className={
+                      location.pathname === "/bridge/gravity" ? "active" : ""
+                    } to="/bridge/gravity">Gravity Bridge</Link>
                 </li>
                 <li>
-                  <Link to="/bridge/nomic">Nomic BTC</Link>
+                  <Link  className={
+                      location.pathname === "/bridge/nomic" ? "active" : ""
+                    } to="/bridge/nomic">Nomic BTC</Link>
                 </li>
               </ul>
             )}
@@ -107,19 +131,41 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="/govern"
-            className={location.pathname === "/govern" ? "active" : ""}
-          >
-            Govern
-          </Link>
+          <div className="dropdown" ref={governRef}>
+            <Link
+              onClick={() => setOpenGovern(!openGovern)}
+              to="/govern/chain"
+              className={location.pathname === "/govern/chain" ? "active" : ""}
+            >
+              Govern
+            </Link>
+            {openGovern && (
+              <ul>
+                <li>
+                  <Link
+                    className={
+                      location.pathname === "/govern/chain" ? "active" : ""
+                    }
+                    to="/govern/chain"
+                  >
+                    Chain Governance
+                  </Link>
+                </li>
+                <li>
+                  <Link  className={
+                      location.pathname === "/gevern/sentinel" ? "active" : ""
+                    } to="/govern/sentinel">Sentinel</Link>
+                </li>
+              </ul>
+            )}
+          </div>
         </li>
         <li>
           <Link
             to="/developer/store"
             className={location.pathname === "/developer" ? "active" : ""}
           >
-            <DeveloperLogo/>
+            <DeveloperLogo />
             Developer
           </Link>
         </li>

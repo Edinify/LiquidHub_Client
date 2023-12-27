@@ -21,7 +21,7 @@
 }
 
 .wallet-page .wallet-content .wallet-header p {
-  color: #607d8b;
+  color: var(--dark-green);
   font-weight: 400;
 }
 
@@ -55,13 +55,13 @@
 }
 
 .wallet-page .wallet-content .wallet-cards .wallet-card .wallet-box:hover {
-  border:1px solid #60fbd0;
+  border:1px solid var(--light-green);
 }
 
 .wallet-page .wallet-content .wallet-cards .wallet-card .wallet-box h2 {
   font-size: 14px;
   font-weight: 600;
-  color: #607d8b;
+  color: var(--dark-green);
 }
 
 

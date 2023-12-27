@@ -20,7 +20,7 @@
 }
 
 .footer .footer-content .footer-top .footer-list ul li a {
-  color: #607d8b;
+  color: var(--dark-green);
   text-decoration: none;
   margin-right: 10px;
   font-size: 16px;

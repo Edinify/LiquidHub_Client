@@ -8,7 +8,7 @@
 }
 
 .sidebar li a {
-  color: #607d8b;
+  color: var(--dark-green);
   text-decoration: none;
   transition: 0.25s;
   font-weight: 600;

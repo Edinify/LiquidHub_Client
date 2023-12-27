@@ -1,0 +1,158 @@
+.stake-modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.stake-modal-container {
+  padding: 16px;
+  background-color: rgba(34, 36, 47, 0.85);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 35%;
+}
+
+.stake-modal-container .stake-modal-context {
+  width: 100%;
+}
+
+
+.stake-modal-container.sentinel form{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.stake-modal-container.sentinel form input {
+  margin-top: 10px;
+}
+
+.stake-modal-container.sentinel form input ,.stake-modal-container.sentinel form textarea  {
+  background-color: transparent;
+  background-color: #161721;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(96, 125, 139, 0.5);
+  color: white;
+}
+
+.stake-modal-container.sentinel form input::placeholder ,.stake-modal-container.sentinel form textarea::placeholder{
+  color: var(--dark-green);
+}
+.stake-modal-container.sentinel form textarea  {
+  margin: 10px 0;
+}
+.stake-modal-container strong {
+  color: white;
+}
+
+.stake-modal-container .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.stake-modal-container .modal-header .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.stake-modal-container .modal-header p {
+  color: var(--dark-green);
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.stake-modal-container .modal-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #161721;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(96, 125, 139, 0.5);
+}
+
+.stake-modal-container .modal-input h4 {
+  color: var(--dark-green);
+}
+.stake-modal-container .modal-input input {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.stake-modal-container .modal-input input::placeholder {
+  color: var(--dark-green);
+}
+
+.stake-modal-container .modal-input input:focus {
+  outline: none;
+}
+
+.stake-modal-container .max {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.stake-modal-container .max p {
+  color: var(--dark-green);
+}
+
+.stake-modal-container .max span {
+  color: var(--light-green);
+}
+
+
+.stake-modal-container .stake-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stake-modal-container .stake-btn.sentinel{
+  justify-content: flex-end;
+  margin: 0;
+  margin-top: 10px;
+  opacity: 0.4;
+
+}
+
+.stake-modal-container .stake-btn button {
+    border: none;
+  background-color: #279fe3;
+  padding: 8px;
+  margin: 0 5px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:1100px) {
+  .stake-modal-container{
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+    .stake-modal-container {
+        width: 100%;
+    }
+}
