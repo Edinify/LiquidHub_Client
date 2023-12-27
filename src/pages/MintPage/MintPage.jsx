@@ -12,7 +12,7 @@ const MintPage = ({ setCurrentObj }) => {
     colors: ["#AA55E6"],
     labels: ["Label 1"],
   };
-
+// 
   const series = [100];
   const navigate = useNavigate();
 
