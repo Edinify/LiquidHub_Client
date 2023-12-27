@@ -6,7 +6,7 @@ import { ReactComponent as PlusIcon } from "../../../assets/mint/plus-large-svgr
 import Chart from "react-apexcharts";
 import "./manage.css";
 import { useState } from "react";
-
+// 
 const options = {
   chart: {
     type: "donut",
