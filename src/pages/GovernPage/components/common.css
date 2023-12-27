@@ -324,3 +324,67 @@
 .govern-manage .right-side .select-vote li:hover {
   background-color:   rgba(96,125,139,.95);
 }
+
+
+
+/* table */
+.govern-manage .govern-cards .table {
+  color: white;
+  border-collapse: collapse; 
+  width: 100%;
+}
+
+.govern-manage .govern-cards th,
+.govern-manage .govern-cards td {
+  border-bottom: 1px solid #22242f; 
+  padding: 10px; 
+  text-align: center;
+}
+
+.govern-manage .govern-cards th{
+  color: var(--dark-green);
+  font-size: 12px;
+}
+
+.govern-manage .govern-cards td {
+  font-size: 12px;
+}
+
+/* .govern-manage .pagination{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.govern-manage .pagination  li {
+  list-style: none;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.govern-manage .pagination  li:first-child,
+.govern-manage .pagination  li:last-child
+ {
+  display: none;
+ } */
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+  .govern-manage .vote-header{
+    flex-direction: column;
+  }
+  .govern-manage .vote-header .left-side{
+    width: 100%;
+  }
+  .govern-manage .vote-header .right-side{
+    width: 100%;
+  }
+}

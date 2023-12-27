@@ -1,15 +1,18 @@
 import { useNavigate } from "react-router-dom";
+// import {Pagination } from "antd"
+ 
 import { ReactComponent as BackIcon } from "../../../assets/mint/back-icon.svg";
 import SuccessIcon from "../../../assets/govern/success-filled-svgrepo-com.svg";
 import ErrorIcon from "../../../assets/govern/error-filled-svgrepo-com.svg";
-import {ReactComponent as DownArrow} from "../../../assets/swap/arrow-down.svg";
-import {ReactComponent as UpArrow} from "../../../assets/swap/arrow-up.svg"
+import { ReactComponent as DownArrow } from "../../../assets/swap/arrow-down.svg";
+import { ReactComponent as UpArrow } from "../../../assets/swap/arrow-up.svg";
 import { useState } from "react";
 
 const GovernManage = ({ propos }) => {
   const navigate = useNavigate();
-  const [openFilter,setOpenFilter] = useState(false)
-  const [selectedVote,setSelectedVote] = useState("")
+  const [openFilter, setOpenFilter] = useState(false);
+  const [selectedVote, setSelectedVote] = useState("");
+
 
   const votedData = [
     {
@@ -49,13 +52,75 @@ const GovernManage = ({ propos }) => {
     },
   ];
 
-  const selectVote=[
-    {id:1,name:"All"},
-    {id:2,name:"Yes"},
-    {id:3,name:"No"},
-    {id:4,name:"Abstain"},
-    {id:5,name:"Veto"},
-  ]
+  const selectVote = [
+    { id: 1, name: "All" },
+    { id: 2, name: "Yes" },
+    { id: 3, name: "No" },
+    { id: 4, name: "Abstain" },
+    { id: 5, name: "Veto" },
+  ];
+
+  const headData = [
+    { id: 1, header: "Name" },
+    { id: 2, header: "Voting Power" },
+    { id: 3, header: "Voting Power (%)" },
+    { id: 4, header: "Vote" },
+    { id: 5, header: "Note/Memo" },
+  ];
+
+  const bodyData = [
+    {
+      id: 1,
+      name: "KujiDAO",
+      votingPow: "	3.00M KUJI",
+      votingPow2: "4.592%",
+      vote: "Yes",
+      note: "A quarky upgrade",
+    },
+    {
+      id: 2,
+      name: "KujiDAO",
+      votingPow: "	3.00M KUJI",
+      votingPow2: "4.592%",
+      vote: "Yes",
+      note: "A quarky upgrade",
+    },
+    {
+      id: 3,
+      name: "KujiDAO",
+      votingPow: "	3.00M KUJI",
+      votingPow2: "4.592%",
+      vote: "Yes",
+      note: "A quarky upgrade",
+    },
+    {
+      id: 4,
+      name: "KujiDAO",
+      votingPow: "	3.00M KUJI",
+      votingPow2: "4.592%",
+      vote: "Yes",
+      note: "A quarky upgrade",
+    },
+    {
+      id: 5,
+      name: "KujiDAO",
+      votingPow: "	3.00M KUJI",
+      votingPow2: "4.592%",
+      vote: "Yes",
+      note: "A quarky upgrade",
+    },
+    {
+      id: 6,
+      name: "KujiDAO",
+      votingPow: "	3.00M KUJI",
+      votingPow2: "4.592%",
+      vote: "Yes",
+      note: "A quarky upgrade",
+    },
+  ];
+
+
+
 
   return (
     <div className="govern-manage">
@@ -82,7 +147,7 @@ const GovernManage = ({ propos }) => {
             </div>
             <div className="propos-voted">
               {votedData.map((item) => (
-                <div key={item.id}  className="vote-container">
+                <div key={item.id} className="vote-container">
                   {item.voted === "Yes" ? (
                     <img src={item.img} alt="" />
                   ) : (
@@ -109,23 +174,56 @@ const GovernManage = ({ propos }) => {
               </div>
               <div className="right-side">
                 <h6> Filter votes</h6>
-                <div className="filter-type" onClick={()=>setOpenFilter(!openFilter)} >
-                  <p>{selectedVote?selectedVote : "All"}</p>
-                  {openFilter ? <UpArrow/> : <DownArrow/>}
+                <div
+                  className="filter-type"
+                  onClick={() => setOpenFilter(!openFilter)}
+                >
+                  <p>{selectedVote ? selectedVote : "All"}</p>
+                  {openFilter ? <UpArrow /> : <DownArrow />}
 
-                  {openFilter &&
-                  <div className="status-dropdown">
-                  <ul className="select-vote" >
-                    {selectVote.map(vote=>(
-                      <li  onClick={()=>setSelectedVote(vote.name)}  key={vote.id} >{vote.name}</li>
-                    ))}
-                  </ul>
-                  </div>
-                  }
-
+                  {openFilter && (
+                    <div className="status-dropdown">
+                      <ul className="select-vote">
+                        {selectVote.map((vote) => (
+                          <li
+                            onClick={() => setSelectedVote(vote.name)}
+                            key={vote.id}
+                          >
+                            {vote.name}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
+            <table className="table">
+          <thead>
+            <tr>
+              {headData.map((head) => (
+                <th key={head.id}>{head.header}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {bodyData.map((body, index) => (
+              <tr key={index}>
+                <td>{body.name}</td>
+                <td>{body.votingPow}</td>
+                <td>{body.votingPow2}</td>
+                <td>{body.vote}</td>
+                <td>{body.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {/* <Pagination
+          simple
+          defaultCurrent={currentPage}
+          total={postsTable.length}
+          onChange={paginate}
+        /> */}
           </div>
         </div>
       </div>
